@@ -1,0 +1,250 @@
+/* Contains CSS changes that need to be added to sass */
+
+.dashboard-container .main-task-holder .inner-wrapper {
+  width: inherit !important;
+}
+
+.dashboard-container .weather-holder {
+  top: 2vh;
+}
+
+.dashboard-container .wallpaper-holder {
+  background-position: center;
+}
+.notification-popup-wrapper .notification-popup-holder .header-wrapper .title {
+  font-weight: 400;
+}
+
+footer .notification-alert-holder .notifi-brand-icon img {
+  height: 33px;
+  width: 33px;
+}
+
+footer .work-mode-holder img {
+  width: 43px;
+  height: 32px;
+}
+
+footer .nav-holder .nav-item.notebooks.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/notebooks_clicked.png);
+  background-size: 15px 20px;
+}
+
+footer .nav-holder .nav-item.notebooks.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/notebooks_clicked.png);
+}
+
+footer .nav-holder .nav-item.notebooks .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/notebooks.png);
+  background-size: 15px 20px;
+}
+
+footer .nav-holder .nav-item.notebooks:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/notebooks_hover.png);
+  background-size: 18px 24px;
+}
+
+footer .nav-holder .nav-item.folders.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/folders_clicked.png);
+  background-size: 20px 16px;
+}
+
+footer .nav-holder .nav-item.folders.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/folders_clicked.png);
+  background-size: 20px 16px;
+}
+
+footer .nav-holder .nav-item.folders .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/folders.png);
+  background-size: 20px 16px;
+}
+
+footer .nav-holder .nav-item.folders:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/folders_hover.png);
+  background-size: 24px 19px;
+}
+footer .nav-holder .nav-item.news.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/news_clicked.png);
+  background-size: 24px 23px;
+    opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.news.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/news_clicked.png);
+  background-size: 24px 23px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.news .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/news.png);
+  background-size: 24px 23px;
+    opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.news:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/news_hover.png);
+  background-size: 26px 25px;
+    opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.interests.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/interests_clicked.png);
+  background-size: 29px 18px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.interests.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/interests_clicked.png);
+  background-size: 29px 18px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.interests .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/interests.png);
+  background-size: 29px 18px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.interests:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/interests_hover.png);
+  background-size: 30px 19px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.groups.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/groups_clicked.png);
+  background-size: 26px 17px;
+}
+
+footer .nav-holder .nav-item.groups.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/groups_clicked.png);
+  background-size: 26px 17px;
+}
+
+footer .nav-holder .nav-item.groups .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/groups.png);
+  background-size: 26px 17px;
+}
+
+footer .nav-holder .nav-item.groups:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/groups_hover.png);
+  background-size: 28px 18px;
+}
+
+footer .nav-holder .nav-item.calendar.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/calandar_clicked.png);
+  background-size: 19px 20px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.calendar.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/calandar_clicked.png);
+  background-size: 19px 20px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.calendar .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/calandar.png);
+  background-size: 19px 20px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.calendar:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/calandar_hover.png);
+  background-size: 23px 24px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.call-center.active .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/call_clicked.png);
+  background-size: 12px 23px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.call-center.active:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/call_clicked.png);
+  background-size: 12px 23px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.call-center .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/call.png);
+  background-size: 12px 23px;
+  opacity: 0.5;
+}
+
+footer .nav-holder .nav-item.call-center:hover .icon-holder {
+  background-image: url(../images/dashboard/bottom-bar/call_hover.png);
+  background-size: 13px 25px;
+  opacity: 0.5;
+}
+
+.popup-holder .edit-note-popup .note-body .title-wrapper {
+  width: calc(100% - 92px);
+  left: 46px;
+  top: 49px;
+  padding-top: 17px;
+  background-color: white;
+}
+
+.popup-holder .edit-note-popup .inner-footer {
+  position: absolute;
+  bottom: 10px;
+  padding-left: 25px
+}
+
+.popup-holder .edit-note-popup .inner-footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  background-color: black;
+  padding: 2px;
+}
+
+.popup-holder .edit-note-popup .ql-custom-cursors div {
+  position: absolute;
+  height: 15px;
+  width: 3px;
+}
+
+.popup-holder .edit-note-popup .ql-custom-cursors p {
+  width: 300px;
+  font-size: 11px;
+  margin-top: -7px; 
+}
+
+.popup-holder .edit-note-popup .ql-custom-cursors span {
+  color: white;
+  padding: 1px;
+}
+
+.popup-holder .edit-note-popup {
+  width: 653px !important;
+  height: 637px !important;
+}
+
+.popup-holder .edit-note-popup .ql-container {
+  height: 435px;
+  overflow-y: scroll;
+}
+
+.popup-holder .edit-note-popup .ql-editor {
+  height: 435px;
+  overflow-y: visible;
+}
+
+
+
+.ql-toolbar.ql-snow,
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border: none;
+}
+
+.chat-bubble-holder .chat-bubble .conv-holder .chat-msg {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+  padding: 0 4px 0 8px;
+}

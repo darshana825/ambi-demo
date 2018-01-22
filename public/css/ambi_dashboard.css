@@ -1,0 +1,590 @@
+.center { text-align: center; }
+
+.branding img {
+  height: 30px;
+}
+
+.strike { text-decoration: line-through; }
+
+.no-padding { padding: 0 !important; }
+.p5 { padding: 5px; }
+.ml0 { margin-left: 0; }
+
+.inline-block {
+  display: inline-block;
+}
+
+.main-container {
+  height: calc(100vh - 52px);
+}
+
+.dashboard-white {
+  background-color: white;
+  border-top: .5px solid rgba(51, 51, 51, 0.15);
+}
+
+
+.dashboard-white .left-top-shadow,
+.dashboard-white .left-btm-shadow,
+.dashboard-white .right-top-shadow,
+.dashboard-white .left-top-shadow {
+  display: none;
+}
+
+.dashboard-white .weather-holder .weather-text,
+.dashboard-white .weather-holder .weather-location,
+.dashboard-white .time-holder .date-text,
+.dashboard-white .time-holder .time-text,
+.dashboard-white .greeting-holder .greeting-text,
+.dashboard-white .quote-holder .quote-text,
+.dashboard-white .quote-holder .quote-author, 
+.dashboard-white .main-task-holder .inner-wrapper .task-field {
+  color: #333333;
+  text-shadow: none;
+}
+
+.settings-popup {
+  background-color: rgba(255,255, 255, 1);
+  position: fixed;
+  z-index: 10;
+  left: calc(2.1vw - 22px);
+  bottom: 85px;
+  padding: 15px 5px 15px 15px;
+  border-radius: 10px;
+  border: 3px solid #979797;
+}
+
+.settings-popup:after {
+    content: "";
+    width: 33px;
+    height: 25px;
+    position: absolute;
+    bottom: -24.5px;
+    left: 20px;
+    background: url(../images/dashboard/settings/popdown-arrow.png) no-repeat;
+    background-size: 33px 25px;
+}
+
+.settings-popup h2, 
+.settings-popup h3,
+.settings-popup h4,
+.settings-popup h5 {
+  color: black;
+}
+
+.settings-popup h2 {
+  font-size: 20px; 
+  font-family: 'Pantra-Bold';
+}
+
+.toggle-right {
+  padding: 10px 0;
+}
+
+.toggle-right div {
+  float: right;
+}
+
+.toggle-right h5 {
+  margin-top: 3px;
+}
+
+.toggle-right .active {
+  font-weight: bold;
+}
+
+.toggle-right span {
+  cursor: pointer;
+}
+
+.settings-popup .setting-select {
+  float: left;
+  margin-right: 20px;
+}
+
+.settings-popup .setting-select li { 
+  font-size: 14px;
+  font-family: "Andale Mono";
+  cursor: pointer;
+  color: #000;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.settings-popup .setting-select .minor-section li { 
+  font-size: 12px;
+  font-family: "Andale Mono";
+  cursor: pointer;
+  color: #444;
+  text-transform: lowercase;
+  margin-bottom: 3px;
+}
+
+.settings-popup .setting-select li .active {
+  border-bottom: 1px solid #00a6ef;
+}
+
+.settings-popup .setting-detail {
+  padding-left: 25px;
+  display: inline-block; 
+  border-left: 1.5px solid #e6e6e6;
+}
+
+.settings-popup .setting-detail .setting-detail-content {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 400px;
+  scrollbar-base-color: white;
+  padding-right: 5px;
+}
+
+.settings-popup .setting-detail .setting-detail-content h3 {
+  font-family: 'Pantra-Bold';
+  text-transform: lowercase;
+}
+
+.settings-popup .setting-detail .setting-detail-content::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+.settings-popup .setting-detail .setting-detail-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.settings-popup .setting-detail .setting-detail-content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ed1e7a; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+}
+
+/* General */
+.settings-popup .setting-detail .setting-detail-content .setting-general {
+  padding-top: 25px;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general .profile-photo {
+  width: 35px;
+  height: 35px;
+  margin: -8px 15px 0 0;
+  float: left;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general h3 {
+  margin-bottom: 20px;
+  text-transform:capitalize;
+  font-size: 16px
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general h4 {
+  display: inline-block;
+  border-bottom: 1px solid #666;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general #setting-general-account label {
+  width: 50%;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #666262;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general #setting-general-account .error {
+  color: red;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general #setting-general-account span {
+  color: #666262;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general #setting-general-options label {
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #666262;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general #setting-general-options hr {
+  margin: 5px 0;
+  height: 2px;
+  background-color: #e6e6e6;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general .edit-btn
+{
+  padding: 0 10px;
+  float: right;
+  background: #ed1e7a;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+.settings-popup .setting-detail .setting-detail-content .setting-general .save-btn 
+{
+  background: #00a5ef;
+}
+
+/* Background */
+
+.settings-popup .setting-detail .setting-detail-content .background h4 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .active {
+  border-bottom: 1px solid #000;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .col-xs-3 {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .content {
+  clear: both;
+  padding: 0 30px 0 15px;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .content .full-image {
+  width: 100%;
+  height: auto;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .content .wallpaper {
+  height: 65px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .selected-bg{
+  border: 5px solid #00cc33
+}
+
+.settings-popup .setting-detail .setting-detail-content .background .all-wallpapers img:hover {
+  opacity: .8;
+}
+
+.settings-popup .dropzone-custom {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px dashed black;
+}
+
+/* 
+  Widgets Popup
+*/
+.widgets-popup {
+  background-color: rgba(255,255, 255, 1);
+  position: fixed;
+  z-index: 10;
+  left: 70px;
+  top: 70px;
+  padding: 15px 5px 0px 15px;
+  border-radius: 10px;
+  border: 3px solid #ed1e7a;
+  width: 400px;
+}
+
+.widgets-popup:before {
+    content: "";
+    width: 23px;
+    height: 42px;
+    position: absolute;
+    top: calc(16.6vh - 21px);
+    left: -23px;
+    background: url(../images/dashboard/settings/popleft-arrow.png) no-repeat;
+    background-size: 23px 42px;
+}
+
+.widgets-popup hr {
+  margin: 1px 0 6px;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.widgets-popup h5 {
+  color: #333;
+  font-family: 'Pantra-Regular';
+  font-size: 13px;
+}
+
+.widgets-popup h2, 
+.widgets-popup h3,
+.widgets-popup h4,
+.widgets-popup h5 {
+  color: black;
+}
+
+.widgets-popup h2 {
+  font-size: 20px; 
+  font-family: 'Pantra-Medium';
+}
+
+/* Countdown Widget */
+#countdown-widget {
+  z-index: 9999;
+  cursor: pointer;
+  text-align: right;
+  position: absolute; 
+  top: 2vh;
+  right: calc(1.1vw + 120px);
+}
+
+#countdown-widget h3 {
+  margin-bottom: 0;
+  color: white;
+}
+
+#countdown-widget h3 span {
+  font-size: 20px;
+}
+
+#countdown-widget h5 {
+  color: white;
+}
+
+#countdown-widget .popup {
+  cursor: default;
+  background-color: white;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 340px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#countdown-widget .popup-padding {
+  padding: 15px 15px 0;  
+}
+
+#countdown-widget .popup h4 {
+  color: #333;
+  font-family: 'Pantra-Bold';
+  text-transform: lowercase;
+  margin-bottom: 0;
+}
+
+#countdown-widget .popup p {
+  color: #333;
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#feedback-widget .popup h5, 
+#countdown-widget .popup h5 {
+  color: black;
+  text-align: left;
+  font-family: 'Pantra-Bold';
+  text-transform: lowercase;
+  color: #666;
+}
+
+#countdown-widget .popup a {
+  color: black;
+  margin-top: 13px;
+}
+
+#countdown-widget .popup .dropdown {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#countdown-widget .popup .dropdown .dropdown-menu {
+  min-width: 60px;
+}
+
+#countdown-widget .popup .dropdown a {
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#countdown-widget .popup .dropdown button { 
+  border: none;
+  color: black;
+  background-color: transparent;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 2px solid #bdbebe;
+  border-radius: 0;
+  padding: 0 0 4px 0;
+  margin: 0;
+}
+
+#countdown-widget .popup .dropdown .caret {
+  margin-left: 6px;
+}
+
+#countdown-widget .popup .dropdown .caret {
+    width: 10px;
+    height: 10px;
+    border: none;
+    font-family: 'Glyphicons Halflings';
+    margin-top: -15px;
+}
+
+#countdown-widget .popup .dropdown .caret:before {
+  content: "\e114";
+  font-size: 10px;
+  font-weight: 100;
+  -webkit-text-stroke: 1px white;
+}
+
+#countdown-widget .popup .dropdown .scrollable-dropdown {
+  max-height: 30vh;
+  overflow-y: scroll;
+  padding-left: 18px;
+}
+
+#countdown-widget .popup .btn-save { 
+  border-radius: 0 0 5px 5px;
+  color: white;
+  font-family: 'Pantra-Regular';
+}
+
+#countdown-widget .popup .valid-date {
+  background-color: #a6c74a;
+  border-color: transparent;
+  color: white;
+}
+
+#feedback-widget .popup .secondary-label,
+#countdown-widget .popup .date-label {
+  margin-top: 10px;
+}
+
+#feedback-widget .popup textarea,
+#feedback-widget .popup input,
+#countdown-widget .popup input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #bdbebe;
+  margin-bottom: 8px;
+  color: black;
+}
+
+#feedback-widget .popup button,
+#countdown-widget .popup button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Feedback Widget*/
+#feedback-widget {
+  cursor: pointer;
+  text-align: right;
+  position: absolute; 
+  bottom: 91px; /* 21px*/
+  right: 2.1vw;
+  z-index: 9999;
+}
+
+#feedback-widget .popup {
+  text-align: left;
+  cursor: default;
+  background-color: white;
+  position: relative;
+  bottom: 2vh;
+  right: -2vh;
+  width: 250px;
+  border-radius: 10px;
+  padding: 8px; 
+  border: 3px solid #979797;
+  text-align: left;
+}
+
+#feedback-widget .popup p {
+  text-align: center;
+}
+#feedback-widget i {
+  color: white;
+}
+
+.quote-holder {
+  margin-top: -20px;
+  /* Add Space for hover */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.quote-holder a {
+  color: white;
+}
+
+.quote-holder a:hover {
+  color: #ddd;
+}
+
+.myDropzone {
+  z-index: 99999;
+}
+
+.drag-view {
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+}
+
+.drag-view h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Pantra-Regular';
+  font-size: 17px;
+}
+
+.blurred {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.main-task-holder input {
+  font-size: 34px !important;
+  font-family: 'Work Sans';
+  font-weight: 500 !important;
+  width: 592px;
+  margin: 0 auto;
+}
+.main-task-holder h4 {
+  margin-top: 0;
+  color: white;
+  font-size: 34px;
+  font-family: 'Work Sans';
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 9px;
+  text-shadow: 0px 0px 10px #000;
+  letter-spacing: 2px;
+}
+
+.main-task-holder i { 
+  padding: 10px 10px;
+  color: white;
+  vertical-align: middle;
+  margin-top: -9px;
+}
+
+.main-task-holder i:hover {
+  color: #ccc;
+}

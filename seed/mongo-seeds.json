@@ -1,0 +1,180 @@
+{
+  "secretaries": {
+    "model": "Secretary",
+    "documents": [
+      {
+        "full_name": "Donna",
+        "gender": "F",
+        "image_name": "donna.png"
+      },
+      {
+        "full_name": "Bob",
+        "gender": "M",
+        "image_name": "bob.png"
+      }
+    ]
+  },
+  "news": {
+    "model": "News",
+    "documents": [
+      {
+        "channels": [
+          {
+            "url": "http://fortune.com/feed/",
+            "channel_image": "fortune.png",
+            "name": "Fortune"
+          },
+          {
+            "url": "http://feeds.feedburner.com/businessinsider",
+            "channel_image": "ci-business-insider.png",
+            "name": "BusinessInsider"
+          },
+          {
+            "url": "http://feeds.bbci.co.uk/news/business/rss.xml",
+            "channel_image": "bbc.png",
+            "name": "BBC"
+          }
+        ],
+        "categoryImage": "nt-busness-cover.png",
+        "category": "Business"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://feeds.feedburner.com/TechCrunchIT",
+            "channel_image" : "ci-techcrunch.png",
+            "name" : "TechCrunch"
+          },
+          {
+            "url" : "http://thenextweb.com/feed/",
+            "channel_image" : "tnw.png",
+            "name" : "TheNextWeb"
+          }
+        ],
+        "categoryImage": "nt-tech-cover.png",
+        "category": "Technology"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://www.economist.com/sections/economics/rss.xml",
+            "channel_image" : "ci-economist.png",
+            "name" : "The Economist"
+          }
+        ],
+        "categoryImage": "nt-economics-cover.png",
+        "category": "Economics"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://feeds.mashable.com/Mashable",
+            "channel_image" : "ci-mashable.png",
+            "name" : "Mashable"
+          },
+          {
+            "url" : "https://www.theguardian.com/international/rss",
+            "channel_image" : "ci-guardian.png",
+            "name" : "The Guardian"
+          }
+        ],
+        "categoryImage": "nt-entertainment-cover.png",
+        "category": "Entertainment"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://www.dailymail.co.uk/health/index.rss",
+            "channel_image" : "ci-daily-mail.png",
+            "name" : "Daily Mail"
+          },
+          {
+            "url" : "https://www.sciencedaily.com/rss/top.xml",
+            "channel_image" : "ci-science-daily.png",
+            "name" : "Science Daily"
+          },
+          {
+            "url" : "http://feeds.nbcnews.com/feeds/topstories",
+            "channel_image" : "ci-nbc.png",
+            "name" : "NBC News"
+          },
+          {
+            "url" : "http://feeds.foxnews.com/foxnews/health",
+            "channel_image" : "ci-fox-news.png",
+            "name" : "Fox News"
+          }
+        ],
+        "categoryImage": "nt-health-cover.png",
+        "category": "Health"
+      },
+      {
+        "channels": [
+          {
+            "url" : "https://sports.yahoo.com/top/rss.xml",
+            "channel_image" : "ci-yahoo-sports.png",
+            "name" : "Yahoo Sports"
+          },
+          {
+            "url" : "http://rss.cbssports.com/rss/headlines",
+            "channel_image" : "ci-cbs-sport.png",
+            "name" : "CBS Sports"
+          }
+        ],
+        "categoryImage": "nt-sports-cover.png",
+        "category": "Sports"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://feeds.hbr.org/harvardbusiness/",
+            "channel_image" : "ci-harvard-br.png",
+            "name" : "Harvard Business Review"
+          },
+          {
+            "url" : "https://www.technologyreview.com/c/computing/rss/",
+            "channel_image" : "ci-mit.png",
+            "name" : "MIT Review"
+          },
+          {
+            "url" : "http://www.michiganquarterlyreview.com/feed/",
+            "channel_image" : "ci-mqr.png",
+            "name" : "Michigan Quarterly Review"
+          }
+        ],
+        "categoryImage": "",
+        "category": "Educational Reviews"
+      },
+      {
+        "channels": [
+          {
+            "url" : "http://feeds.foxnews.com/foxnews/politics",
+            "channel_image" : "ci-fox-news.png",
+            "name" : "FOX News"
+          },
+          {
+            "url" : "http://www.huffingtonpost.com/feeds/verticals/politics/index.xml",
+            "channel_image" : "ci-huffingtonpost.png",
+            "name" : "Huffington Post"
+          },
+          {
+            "url" : "http://feeds.nbcnews.com/feeds/topstories",
+            "channel_image" : "ci-nbc.png",
+            "name" : "NBC"
+          },
+          {
+            "url" : "http://feeds.abcnews.com/abcnews/politicsheadlines",
+            "channel_image" : "ci-abc-news.png",
+            "name" : "ABC"
+          },
+          {
+            "url" : "http://feeds.wnyc.org/tnypoliticalscene",
+            "channel_image" : "ci-new-yorker.png",
+            "name" : "New Yorker"
+          }
+        ],
+        "categoryImage": "nt-politics-cover.png",
+        "category": "Politics"
+      }
+    ]
+  }
+}

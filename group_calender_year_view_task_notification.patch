@@ -1,0 +1,38 @@
+Index: public/app/pages/calender/YearWeek.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/app/pages/calender/YearWeek.js	(revision 8e3208c2e8a092e61d84e2bb11c4cf4ca88be40a)
++++ public/app/pages/calender/YearWeek.js	(revision )
+@@ -15,7 +15,8 @@
+         var days = [],
+             date = this.props.date,
+             month = this.props.month,
+-            events = this.props.events;
++            events = this.props.events,
++            _this = this;
+ 
+         for (var i = 0; i < 7; i++) {
+ 
+@@ -33,7 +34,7 @@
+                             onClick={this.props.select.bind(null, day)}>
+                 <div className="squre">{this.renderNormalDate(day)}</div>
+                         <div className="action-area">
+-                            {day.daily_events._todo == true ?
++                            {day.daily_events._todo == true && !_this.props.isGroupCall ?
+                                 <div className="todo"></div> : '' }
+                             {day.daily_events._events == true ?
+                                 <div className="event"></div> : '' }
+@@ -77,7 +78,10 @@
+                     if(this.props.events[c].type == 1){
+                         _rtnObj._events = true;
+                     }
+-                   // _events.push(this.props.events[c]);
++                    if(this.props.events[c].type == 3){
++                        _rtnObj._tasks = true;
++                    }
++                    // _events.push(this.props.events[c]);
+                 }
+             }
+         }

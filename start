@@ -1,0 +1,42 @@
+install dependencies:
+     $ cd src && npm install
+
+   run the app:
+     $ DEBUG=src:* npm start
+
+     run mocha test case one by one
+     $ ./node_module/.bin/mocha ./test/TestCalendarController.js
+     $ ./node_module/.bin/mocha ./test/TestCalendarController.js
+     $ ./node_module/.bin/mocha ./test/TestConnectionController_mocha.js
+     $ ./node_module/.bin/mocha ./test/TestFolderController.js
+     $ ./node_module/.bin/mocha ./test/TestLifeEventController.js
+     $ ./node_module/.bin/mocha ./test/TestNewsController.js
+     $ ./node_module/.bin/mocha ./test/TestNoteController.js
+     $ ./node_module/.bin/mocha ./test/TestNotificationController.js
+     $ ./node_module/.bin/mocha ./test/TestPostController_mocha.js
+     $ ./node_module/.bin/mocha ./test/TestSkillController.js   - (all hard coded. so not functioning)
+     $ ./node_module/.bin/mocha ./test/TestUserController.js   - (some hard coded user_id. so those functions are not functioning)
+
+   Note:-
+   #1. The below functions in the UserController functions are hard code with user_id and some other values. so these functions are not added in test case.
+        (addEducationDetail,deleteEducationDetail)(saveSkillInfo,getSkills)(connectionCount)(getNewsCategories,deleteNewsCategory,addNewsChannel,getNewsChannels,deleteNewsChannel)(getSavedArticles,deleteSavedArticle)(file upload and passing as json object having issue)
+
+   #2. Email and Sms notifications are not working, so forget password and reset password functions testcases are failing.
+
+   #3. Can run all the test case at once using, $ ./node_module/.bin/mocha ./test/*
+       But it may fail because of some other old test controller files are there. once if we remove those controllers, we can run all at once.
+       (TestConnectionController.js,TestCommentController.js,TestPostController.js,TestSessionController.js,bundle.js,vendors.js)
+
+
+
+   # gulp development task
+   gulp scripts
+
+   # gulp production task
+   gulp deploy
+
+   # webpack dev
+   npm dev run
+
+   # webpack dev server
+   webpack-dev-server

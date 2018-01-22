@@ -1,0 +1,24 @@
+{
+  "name": "bower",
+  "version": "1.0.0",
+  "authors": [
+    ""
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
+    "bxslider-4": "4.2.5",
+    "fancybox": "2.1.5",
+    "malihu-custom-scrollbar-plugin": "*",
+    "components-font-awesome": "*",
+    "html5shiv": "3.7.3",
+    "geosuggest": "react-geosuggest#^1.19.0",
+    "socket.io-client": "^1.4.6",
+    "bit6": "^0.9.9",
+    "simpleWeather": "^3.1.0",
+    "DOMPurify": "dompurify#0.8.5",
+    "jqueryrotate": "*",
+    "dropzone": "^4.3.0"
+  }
+}
